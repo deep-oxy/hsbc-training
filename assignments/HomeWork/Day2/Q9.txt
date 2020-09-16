@@ -1,0 +1,3 @@
+9)  Understand the difference between object reference and Object.
+
+A reference is an entity which provides a way to access object of its type. An object is an entity which provides a way to access the members of it's class or type. Generally, You can't access an object without a reference to it.
