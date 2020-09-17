@@ -9,28 +9,31 @@ public class CityByCode {
 
 	public String getCityByCode(int n)
 	{
-		if(n==1)
+		
+		switch (n)
 		{
+		case 1:
 			return "DELHI";
-		}
-		if(n==2)
-		{
+			
+		case 2:
 			return "NOIDA";
-		}
-		if(n==3)
-		{
+			
+		case 3:
 			return "GUARGAON";
-		}
-		if(n==4)
-		{
+		
+		case 4:
 			return "BANGLORE";
+			
+		default:
+			return "INVALIDCODE";
 		}
-		return "INVALIDCODE";
+		
+		
 	}
 
 	public static void main(String[] args) {
 		CityByCode o=new CityByCode();
-		System.out.println(o.getCityByCode(2));
+		System.out.println(o.getCityByCode(55));
 
 	}
 
