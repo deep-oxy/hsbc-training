@@ -1,0 +1,6 @@
+File exist: true
+The File is writable: true
+the file is readable: true
+the file is a directory: false
+File last modified: 1600666726092
+File size: 1551bytes
