@@ -1,0 +1,7 @@
+pakage com.hsbc.training.app contains mainApp.java to execute the application.
+pakage com.hsbc.training.app.dao includes files shoppingDao.java as interface and DuplicateItemException.java and ItemNotFoundException.java as exception for the application.
+package com.hsbc.training.app.entity includes Apparels.java, Electronics.java and FoodItems.java as the entity for the application.
+package com.hsbc.training.app.impl includes shoppingDaoImpl.java implementing shoppingDao.java as the implementation for the service layer of the application.
+package com.hsbc.training.app.service includes ShoppingService.java as the service layer of the application.
+
+In the calculations Ive assumed the maximum quantity f any item is 200, for finding the sale.
