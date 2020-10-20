@@ -1,0 +1,39 @@
+<h1>Emp Id List</h1>
+<ul>
+    <li *ngFor="let emp of empList" (click)="findEmp(emp.empId)">{{emp.empId}}</li>
+</ul>
+<table>
+    <tr *ngFor="let e of emp">
+        <td>{{e.empId}}</td>
+        <td>{{e.name}}</td>
+        <td>{{e.city}}</td>
+        <td>{{e.salary}}</td>
+    </tr>
+</table>
+<br>
+
+<hr>
+
+
+<button (click)="listAllEmp()">{{label}}</button>
+
+<div *ngIf="dataFlag;then tableData else hideTable"></div>
+<ng-template #tableData>
+    <h1>Employee Details Table</h1>
+    <hr>
+    <table>
+        <tr *ngFor="let emp of empList">
+            <td>{{emp.empId}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.city}}</td>
+            <td>{{emp.salary}}</td>
+        </tr>
+    </table>
+    <hr>
+</ng-template>
+<ng-template #hideTable>
+    <h1>Employee Details Table hidden</h1>
+    <hr>
+    
+    <hr>
+</ng-template>

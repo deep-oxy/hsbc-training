@@ -1,0 +1,17 @@
+<app-emp-json></app-emp-json>
+<br>
+<br>
+<br>
+<app-emp-id-list></app-emp-id-list>
+<br>
+<br>
+<br>
+<div>
+    <h1>Data received from Child</h1>
+    <h2>{{childData}}</h2>
+</div>
+<app-child [parentData]="message" (childEvent)="childData=$event"></app-child>
+<br>
+<br>
+<br>
+<app-emp-details></app-emp-details>
