@@ -1,0 +1,16 @@
+<h1>Customer List</h1>
+<hr>
+<button (click)="listAll()">List Customers</button>
+
+<table>
+    <tr>
+        <td>Customer ID</td>
+        <td>Customer Name</td>
+        <td>Mobile</td>
+    </tr>
+    <tr *ngFor="let cus of customerList">
+        <td>{{cus.customerId}}</td>
+        <td>{{cus.customerName}}</td>
+        <td>{{cus.mobile}}</td>
+    </tr>
+</table>

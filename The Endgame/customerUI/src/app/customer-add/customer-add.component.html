@@ -1,0 +1,22 @@
+<h4>Add Customer</h4>
+<hr>
+<table>
+    <tr>
+        <td><label>Customer Id</label></td>
+        <td><input type="text" name="customerId" value="" #customerId></td>
+    </tr>
+    <tr>
+        <td><label>Customer Name</label></td>
+        <td><input type="text" name="customerName" value="" #customerName></td>
+    </tr>
+    <tr>
+        <td><label>Mobile</label></td>
+        <td><input type="text" name="mobile" value="" #mobile></td>
+    </tr>
+
+
+</table>
+<br>
+<button (click)="addCustomer(customerId.value,customerName.value,mobile.value)">Add Customer</button>
+
+<h5>{{status.status}}</h5>
